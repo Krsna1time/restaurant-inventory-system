@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Zomato Inventory Management</h1>
+        
+        <section id="restaurants">
+            <h2>Restaurants</h2>
+            <form id="restaurant-form">
+                <input type="text" id="restaurant-name" placeholder="Restaurant Name" required>
+                <button type="submit">Add Restaurant</button>
+            </form>
+            <ul id="restaurant-list"></ul>
+        </section>
+        
+        <section id="dishes">
+            <h2>Dishes</h2>
+            <select id="restaurant-select">
+                <option value="">Select Restaurant</option>
+            </select>
+            <form id="dish-form">
+                <input type="text" id="dish-name" placeholder="Dish Name" required>
+                <input type="number" id="dish-price" placeholder="Price" step="0.01" required>
+                <button type="submit">Add Dish</button>
+            </form>
+            <ul id="dish-list"></ul>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
